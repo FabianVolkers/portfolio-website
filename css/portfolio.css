@@ -48,7 +48,11 @@ h1 {
 }
 
 #welcome-section h1 {
-    padding-top: 40vh;
+    padding-top: 42vh;
+}
+#welcome-section p {
+    padding-top: 15px;
+    font-size: 1.5em;
 }
 
 #projects {
