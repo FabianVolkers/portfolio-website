@@ -3,5 +3,5 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/fabidton/public_html/
     - cp index.html $DEPLOYPATH
-    - cp -R css $DEPLOYPATH
-    - cp -R js $DEPLOYPATH
+    - cp -R css/ $DEPLOYPATH
+    - cp -R js/ $DEPLOYPATH
