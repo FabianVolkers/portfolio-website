@@ -5,3 +5,4 @@ deployment:
     - cp index.html $DEPLOYPATH
     - cp -R css/ $DEPLOYPATH
     - cp -R js/ $DEPLOYPATH
+    - cp  .htaccess $DEPLOYPATH
