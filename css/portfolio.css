@@ -325,11 +325,15 @@ main {
     #navbar ul {
         text-align: center;
         width: 100%;
+        
     }
     #navbar li {
-        margin: 20px;
-        width: 25%;
-        font-size: 20px;
+        margin: 5px;
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 30px;
     }
     .project-row {
         flex-direction: column;
@@ -375,8 +379,8 @@ main {
 
     #social-div {
         margin-left: 0vw;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     /*Social circle styling*/
