@@ -308,118 +308,6 @@ h1 {
     transform: rotate(315deg) translate(10vw) rotate(-315deg);
 }
 
-
-
-/* Because phones are weird - Small devices (landscape phones, less than 768px)*/
-@media only screen and (max-device-width: 767px) {
-
-    #navbar ul {
-        text-align: center;
-    }
-    #navbar li {
-        margin: 20px;
-    }
-    .project-row {
-        flex-direction: column;
-        margin-left: 1vw;
-    }
-
-    #projects img {
-        width: 90vw;
-        height: auto;
-    }
-
-    .contact-row {
-        flex-direction: column;
-        padding-bottom: 20px;
-    }
-
-    #form-div {
-        width: 90vw;
-        margin-left: 5vw;
-
-    }
-
-    #social-div {
-        margin-left: 0vw;
-        margin-top: 10px;
-    }
-
-    /*Social circle styling*/
-    .circle-container {
-        position: relative;
-        width: 60vw;
-        height: 60vw;
-        padding: 10.7vw;
-        /*
-    2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))
-    
-    */
-        border: dashed 1px;
-        border-radius: 50%;
-        margin: 1.75em auto 0;
-        font-size: 20px;
-
-    }
-
-    .circle-container a {
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 15vw;
-        height: 15vw;
-        margin: -7.5vw;
-
-        border-radius: 50%;
-        font-size: 7.5vw;
-
-    }
-
-    .icon-fa {
-        padding-top: 3.75vw;
-
-    }
-
-    .circle-fa {
-        text-align: center;
-        text-decoration: none;
-    }
-
-    .deg0 {
-        transform: translate(30vw);
-    }
-
-    /* 12em = half the width of the wrapper */
-    .deg45 {
-        transform: rotate(45deg) translate(30vw) rotate(-45deg);
-    }
-
-    .deg90 {
-        transform: rotate(90deg) translate(30vw) rotate(-90deg);
-    }
-
-    .deg135 {
-        transform: rotate(135deg) translate(30vw) rotate(-135deg);
-    }
-
-    .deg180 {
-        transform: translate(-30vw);
-    }
-
-    .deg225 {
-        transform: rotate(225deg) translate(30vw) rotate(-225deg);
-    }
-
-    .deg270 {
-        transform: rotate(270deg) translate(30vw) rotate(-270deg);
-    }
-
-    .deg315 {
-        transform: rotate(315deg) translate(30vw) rotate(-315deg);
-    }
-}
-
 footer {
     background-color: #c5d5c5;
     text-align: center;
@@ -432,13 +320,16 @@ main {
 }
 
 /* Small devices (landscape phones, less than 768px)*/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
 
     #navbar ul {
         text-align: center;
+        width: 100%;
     }
     #navbar li {
         margin: 20px;
+        width: 25%;
+        font-size: 20px;
     }
     .project-row {
         flex-direction: column;
@@ -460,10 +351,32 @@ main {
         margin-left: 5vw;
 
     }
+    #form-div label {
+        font-weight: bold;
+        font-size: 30px;
+    }
+    #form-div input {
+        display: block;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        line-height: 50px;
+        font-size: 30px;
+    }
+    
+    #form-div textarea {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        line-height: 50px;
+        font-size: 30px;
+    }
 
     #social-div {
         margin-left: 0vw;
-        margin-top: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     /*Social circle styling*/
@@ -495,6 +408,10 @@ main {
         border-radius: 50%;
         font-size: 7.5vw;
 
+    }
+    .circle-text {
+        font-size: 8vw;
+        ;
     }
 
     .icon-fa {
